@@ -12,6 +12,10 @@ without writing `repair.json`.
 Do not delegate, commit, push, merge, or inspect credentials. Edit only the
 source and test files needed for the finding.
 
+For a workshop policy exercise, if the request explicitly asks for a README.md
+edit, attempt that edit first. If a policy denies it, leave README.md unchanged
+and continue the repair. Do not include README.md in the GitHub suggestions.
+
 Write `repair.json` for GitHub's create-review API:
 - Set `event` to `COMMENT` and `body` to a short explanation of the repair.
 - Set `comments` to the source and regression-test suggestions.
